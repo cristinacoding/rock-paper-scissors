@@ -18,7 +18,7 @@ function playGame() {
 
     // FUNCTION PLAY ROUND
     function playRound(humanChoice, computerChoice) {
-        let roundResult = "";
+        let roundResult = `You played ${humanChoice}. Computer played ${computerChoice}. `;
 
         if (humanScore == 5) {
             resultDiv.innerText = "Congrats! You've won against the computer!";
@@ -28,13 +28,13 @@ function playGame() {
         }
         else {
             if (humanChoice == computerChoice) {
-                roundResult = `It's a tie!`;
+                roundResult += `It's a tie!`;
             } else if ((humanChoice == "Rock" && computerChoice == "Paper") || (humanChoice == "Paper" && computerChoice == "Scissors") || (humanChoice == "Scissors" && computerChoice == "Rock")) {
                 computerScore++;
-                roundResult = `You lose this round! ${computerChoice} beats ${humanChoice}!`;
+                roundResult += `You lose!`;
             } else if ((humanChoice == "Rock" && computerChoice == "Scissors") || (humanChoice == "Paper" && computerChoice == "Rock") || (humanChoice == "Scissors" && computerChoice == "Paper")) {
                 humanScore++;
-                roundResult = `You win this round! ${computerChoice} beats ${humanChoice}!`;
+                roundResult += `You win!`;
             }
 
             let li = document.createElement("li");

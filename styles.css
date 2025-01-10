@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   flex-wrap: wrap;
   padding: 1rem;
   box-sizing: border-box;
@@ -35,7 +35,6 @@ h1 {
   gap: 1rem;
   width: 100%;
   box-sizing: border-box;
-  width: 100%;
 }
 
 button {
@@ -63,7 +62,6 @@ button:hover {
   color: white;
   border-radius: 6px;
   padding: 0.8rem;
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -81,14 +79,12 @@ button:hover {
   padding-inline-start: 0px;
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
 }
 
 #rounds li {
   background-color: gainsboro;
   padding: 0.4rem;
-  width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
